@@ -8,7 +8,7 @@ def calculator():
     
     while True:
         try:
-            # Take user input for the operation
+            
             choice = input("Enter the number of the operation (1/2/3/4) or 'q' to quit: ").strip()
             if choice.lower() == 'q':
                 print("Exiting the calculator. Goodbye!")
@@ -18,11 +18,11 @@ def calculator():
                 print("Invalid input. Please choose a valid operation.")
                 continue
             
-            # Input numbers
+            
             num1 = float(input("Enter the first number: "))
             num2 = float(input("Enter the second number: "))
 
-            # Perform the chosen operation
+           
             if choice == '1':
                 print(f"The result of {num1} + {num2} is {num1 + num2}")
             elif choice == '2':
@@ -37,8 +37,8 @@ def calculator():
 
         except ValueError:
             print("Invalid input. Please enter numerical values.")
-        print()  # Blank line for readability
+        print()  
 
-# Run the calculator
+
 if __name__ == "__main__":
     calculator()
